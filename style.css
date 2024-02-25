@@ -1,0 +1,136 @@
+body{
+  background-color: slategray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.block{
+  width: 300px;
+  height: 150px;
+  border: 1px solid white;
+  position: relative;
+border-radius: 20%;
+animation-name: bloc;
+animation-duration: 10000ms;
+animation-iteration-count:infinite;
+animation-delay:2s;
+animation-timing-function: linear;
+opacity: 0;
+}
+
+.eyes{
+  width: 50px;
+  height: 40px;
+  border-radius: 50%;
+  background: black;
+  animation-name: ball;
+animation-duration: 10000ms;
+display: flex;
+justify-content: center;
+align-items: center;
+animation-iteration-count:infinite;
+animation-delay:3s;
+}
+.eyes1{
+  width: 50px;
+  height: 40px;
+  border-radius: 50%;
+  background: black;
+  animation-name: dall;
+animation-duration: 10000ms;
+display: flex;
+justify-content: center;
+align-items: center;
+animation-iteration-count:infinite;
+animation-delay:3s;
+}
+
+.pil{
+  display: flex;
+  padding:40px;
+  justify-content: center;
+  gap: 80px;
+}
+
+@keyframes ball {
+  0%{
+    border: none;
+  }
+  50%{
+    margin-left: 100px;
+    border-radius: 0px;
+    border: 2px solid yellow;
+  }
+  100%{
+    margin-top: 20px;
+  }
+}
+
+@keyframes dall {
+  0%{
+    border: none;
+  }
+  50%{
+    margin-right: 100px;
+    border-radius: 0;
+    border: 2px solid rgba(255, 255, 0, 0.92);
+  }
+  100%{
+    margin-top: 20px;
+  }
+}
+
+@keyframes bloc {
+  10%{
+opacity: 1;
+  }
+  25%{
+    /* background: white; */
+    border: none;
+    transform: scale(2  );
+    /* transform: rotateY(180deg); */
+   
+  }
+
+  55%{
+   transform: translateX(100px);
+  }
+  60%{
+    transform: translateY(200px);
+  }
+
+70%{
+
+  transform: translateX(-100px);
+}
+80%{
+  transform: rotateX(360deg);
+   }
+}
+
+.l{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  animation-name: l;
+animation-duration: 1000ms;
+animation-iteration-count:infinite;
+animation-delay:3s;
+opacity: 0;
+}
+
+@keyframes l{
+  0%{
+opacity: 1;
+  }
+  100%{
+    background: white;
+    border: 3px solid black ;
+    transform: scale(2);
+  
+  }
+
+}
+
